@@ -10,18 +10,15 @@
 	<name>lab1</name>
 	<url>http://maven.apache.org</url>
 
-	<reporting>
+	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
-				<version>2.11</version>
-				<configuration>
-					<configLocation>checkstyle.xml</configLocation>
-				</configuration>
+				<version>2.9.1</version>
 			</plugin>
 		</plugins>
-	</reporting>
+	</build>
 
 	<scm>
 		<connection>scm:git:https://github.com/bubenstar/lab1a.git</connection>
@@ -31,6 +28,7 @@
 	</scm>
 
 	<properties>
+		<checkstyle.config.location>properties/checkstyle.xml</checkstyle.config.location>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
