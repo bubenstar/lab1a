@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!DOCTYPE module PUBLIC
+  "-//Puppy Crawl//DTD Check Configuration 1.2//EN"
+  "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
+
+<module name="Checker">
+  <module name="JavadocPackage">
+   <property name="severity" value="warning"/>
+  </module>
+  <module name="TreeWalker">
+   <module name="MethodLength">
+      <property name="tokens" value="METHOD_DEF"/>
+      <property name="max" value="100"/>
+      <property name="countEmpty" value="false"/>
+   </module>
+ </module>
+</module>
